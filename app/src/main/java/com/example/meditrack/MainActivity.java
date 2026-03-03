@@ -3,6 +3,8 @@ package com.example.meditrack;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.ListView;
+import android.view.View;
+import android.content.Intent;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
@@ -77,11 +79,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Cambiar el texto según la hora
         if (hora >= 6 && hora < 12) {
-            titulo.setText("Buenos días");
+            titulo.setText("¡Buenos días!");
         } else if (hora >= 12 && hora < 20) {
-            titulo.setText("Buenas tardes");
+            titulo.setText("¡Buenas tardes!");
         } else {
-            titulo.setText("Buenas noches");
+            titulo.setText("¡Buenas noches!");
         }
     }
     private void mostrarRecordatorio(TextView textRecordatorio, String medicamento, String horaProgramada) {
@@ -92,5 +94,11 @@ public class MainActivity extends AppCompatActivity {
         } else {
             textRecordatorio.setText("No hay recordatorios en este momento");
         }
+    }
+    //BOTON AGREGAR
+    public void Btn_Agregar(View view){
+        Intent agregar = new Intent(this, AgregarMedicamento.class);
+        startActivity(agregar);
+
     }
 }

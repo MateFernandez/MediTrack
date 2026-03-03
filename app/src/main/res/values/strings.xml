@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">MediTrack</string>
-    <string name="btn_Agregar">Agregar medicamento</string>
+    <string name="btn_Agregar">Agregar recordatorio</string>
     <string name="recordatorio">Recordatorio</string>
     <string name="TextSubtitulo">Medicamentos</string>
+    <string name="Medicamento" />
+    <string name="Cantidad" />
+    <string name="Horario" />
+    <string name="BotonVolver">Volver</string>
+    <string name="Agregar">Agregar</string>
 </resources>
